@@ -1,10 +1,45 @@
+# oneView
+
+# Dependencies
 node_modules/
+
+# Frontend build output
 dist/
-.DS_Store
+.svelte-kit/
+.vite/
+*.tsbuildinfo
+
+# Rust / Tauri build output
+target/
 src-tauri/target/
-*.log
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE / editor files
 .idea/
 .vscode/
-/target/
-/platform/macos-quicklook/Build/
-/platform/windows-preview/build-*/
+*.swp
+*.swo
+
+# AI-generated development reports (repository root only)
+/FIXES-v*.md
+/VALIDATION.md
+/AI-*.md
+/REPORT-*.md
+/SUMMARY-*.md
+/HANDOFF-*.md
+
+# Generated delivery files (repository root only)
+/*.patch
+/*-SHA256.txt
+/*.sha256
+/*.sha256sum
+

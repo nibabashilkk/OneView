@@ -1,0 +1,6 @@
+2026-09-05T07:40:01+09:00 INFO server starting port=8080
+2026-09-05T07:40:01+09:00 DEBUG config loaded source=workspace-demo
+2026-09-05T07:40:02+09:00 [WARN] cache warmup took 420ms
+2026-09-05T07:40:03+09:00 INFO request method=GET path=/health status=200
+2026-09-05T07:40:04+09:00 [ERROR] request method=GET path=/broken status=500 error="workspace-search-probe"
+2026-09-05T07:40:05+09:00 TRACE shutdown watcher tick
