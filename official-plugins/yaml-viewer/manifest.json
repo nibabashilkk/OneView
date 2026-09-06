@@ -1,0 +1,28 @@
+{
+  "id": "com.markdownviewer.official.yaml-viewer",
+  "name": "YAML Viewer",
+  "version": "1.2.0",
+  "description": "YAML 配置文件的只读层级树查看器。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "runtime": {
+    "kind": "worker",
+    "role": "document",
+    "main": "main.js"
+  },
+  "permissions": [],
+  "contributes": {
+    "documentFormats": [
+      {
+        "id": "yaml",
+        "label": "YAML",
+        "extensions": [
+          "yaml",
+          "yml"
+        ]
+      }
+    ],
+    "themes": []
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "id": "com.markdownviewer.official.developer-pack",
+  "name": "Developer Pack",
+  "version": "1.2.0",
+  "description": "官方开发文档格式包：JSON、YAML、TOML、CSV、LOG、DIFF/PATCH。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "runtime": {
+    "kind": "worker",
+    "role": "document",
+    "main": "main.js"
+  },
+  "permissions": [],
+  "contributes": {
+    "documentFormats": [
+      {
+        "id": "json",
+        "label": "JSON",
+        "extensions": [
+          "json"
+        ]
+      },
+      {
+        "id": "yaml",
+        "label": "YAML",
+        "extensions": [
+          "yaml",
+          "yml"
+        ]
+      },
+      {
+        "id": "toml",
+        "label": "TOML",
+        "extensions": [
+          "toml"
+        ]
+      },
+      {
+        "id": "csv",
+        "label": "CSV",
+        "extensions": [
+          "csv"
+        ]
+      },
+      {
+        "id": "log",
+        "label": "LOG",
+        "extensions": [
+          "log"
+        ]
+      },
+      {
+        "id": "diff",
+        "label": "DIFF / PATCH",
+        "extensions": [
+          "diff",
+          "patch"
+        ]
+      }
+    ],
+    "themes": []
+  }
+}

@@ -1,0 +1,8 @@
+name: markdown-viewer
+version: 0.17.3
+features:
+  workspace: true
+  lossless: true
+  systemPreview: true
+  indexCache: true
+  formats: [markdown, json, yaml, csv, toml, log, diff]

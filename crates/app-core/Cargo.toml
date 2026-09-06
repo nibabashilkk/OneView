@@ -1,0 +1,9 @@
+[package]
+name = "app-core"
+version = "0.18.0"
+edition = "2021"
+license = "PolyForm-Noncommercial-1.0.0"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+thiserror = "2"

@@ -1,0 +1,96 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "bundle": {
+    "macOS": {
+      "minimumSystemVersion": "12.0"
+    },
+    "fileAssociations": [
+      {
+        "ext": [
+          "md",
+          "markdown",
+          "mdown",
+          "mkd"
+        ],
+        "name": "Markdown Document",
+        "description": "Markdown document",
+        "role": "Editor",
+        "rank": "Alternate"
+      },
+      {
+        "ext": [
+          "json"
+        ],
+        "name": "JSON Document",
+        "description": "JSON document",
+        "role": "Viewer",
+        "rank": "Alternate"
+      },
+      {
+        "ext": [
+          "yaml",
+          "yml"
+        ],
+        "name": "YAML Document",
+        "description": "YAML document",
+        "role": "Viewer",
+        "rank": "Alternate"
+      },
+      {
+        "ext": [
+          "toml"
+        ],
+        "name": "TOML Document",
+        "description": "TOML document",
+        "role": "Viewer",
+        "rank": "Alternate"
+      },
+      {
+        "ext": [
+          "csv"
+        ],
+        "name": "CSV Document",
+        "description": "CSV document",
+        "role": "Viewer",
+        "rank": "Alternate"
+      },
+      {
+        "ext": [
+          "log"
+        ],
+        "name": "Log Document",
+        "description": "Log document",
+        "role": "Viewer",
+        "rank": "Alternate"
+      },
+      {
+        "ext": [
+          "diff",
+          "patch"
+        ],
+        "name": "Diff Document",
+        "description": "Diff or patch document",
+        "role": "Viewer",
+        "rank": "Alternate"
+      }
+    ]
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "oneView",
+        "width": 860,
+        "height": 720,
+        "minWidth": 720,
+        "minHeight": 520,
+        "resizable": true,
+        "fullscreen": false,
+        "dragDropEnabled": true,
+        "acceptFirstMouse": true,
+        "decorations": true,
+        "hiddenTitle": true,
+        "titleBarStyle": "Overlay"
+      }
+    ]
+  }
+}

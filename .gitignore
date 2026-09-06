@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+src-tauri/target/
+*.log
+.idea/
+.vscode/
+/target/
+/platform/macos-quicklook/Build/
+/platform/windows-preview/build-*/

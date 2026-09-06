@@ -1,0 +1,22 @@
+{
+  "id": "com.markdownviewer.shortcut-conflict-demo",
+  "name": "Shortcut Conflict Demo",
+  "version": "1.0.0",
+  "description": "演示宿主快捷键优先级与插件快捷键冲突提示。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "permissions": [
+    "commands",
+    "ui.notice"
+  ],
+  "runtime": {
+    "kind": "worker",
+    "role": "extension",
+    "main": "main.js"
+  },
+  "contributes": {
+    "documentFormats": [],
+    "themes": []
+  }
+}

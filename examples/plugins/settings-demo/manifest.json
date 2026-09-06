@@ -1,0 +1,23 @@
+{
+  "id": "com.markdownviewer.settings-demo",
+  "name": "Settings Demo",
+  "version": "1.0.0",
+  "description": "演示宿主渲染的插件设置 Schema。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "permissions": [
+    "commands",
+    "settings",
+    "ui.notice"
+  ],
+  "runtime": {
+    "kind": "worker",
+    "role": "extension",
+    "main": "main.js"
+  },
+  "contributes": {
+    "documentFormats": [],
+    "themes": []
+  }
+}

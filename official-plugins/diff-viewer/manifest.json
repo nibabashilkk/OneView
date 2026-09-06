@@ -1,0 +1,28 @@
+{
+  "id": "com.markdownviewer.official.diff-viewer",
+  "name": "Diff Viewer",
+  "version": "1.2.0",
+  "description": "Unified Diff / Patch 文件的增删行、hunk 与摘要查看器。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "runtime": {
+    "kind": "worker",
+    "role": "document",
+    "main": "main.js"
+  },
+  "permissions": [],
+  "contributes": {
+    "documentFormats": [
+      {
+        "id": "diff",
+        "label": "DIFF / PATCH",
+        "extensions": [
+          "diff",
+          "patch"
+        ]
+      }
+    ],
+    "themes": []
+  }
+}

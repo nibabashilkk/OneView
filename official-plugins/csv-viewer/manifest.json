@@ -1,0 +1,27 @@
+{
+  "id": "com.markdownviewer.official.csv-viewer",
+  "name": "CSV Viewer",
+  "version": "1.2.0",
+  "description": "CSV 表格预览，支持引号、逗号和多行字段解析。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "runtime": {
+    "kind": "worker",
+    "role": "document",
+    "main": "main.js"
+  },
+  "permissions": [],
+  "contributes": {
+    "documentFormats": [
+      {
+        "id": "csv",
+        "label": "CSV",
+        "extensions": [
+          "csv"
+        ]
+      }
+    ],
+    "themes": []
+  }
+}

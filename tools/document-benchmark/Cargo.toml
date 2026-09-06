@@ -1,0 +1,9 @@
+[package]
+name = "document-benchmark"
+version = "0.18.0"
+edition = "2021"
+license = "PolyForm-Noncommercial-1.0.0"
+
+[dependencies]
+app-core = { path = "../../crates/app-core" }
+markdown-core = { path = "../../crates/markdown-core" }

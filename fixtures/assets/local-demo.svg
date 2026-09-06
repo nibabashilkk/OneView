@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="240" viewBox="0 0 720 240">
+  <rect width="720" height="240" rx="24" fill="#f4f4f5"/>
+  <rect x="32" y="32" width="176" height="176" rx="20" fill="#18181b"/>
+  <text x="120" y="137" text-anchor="middle" font-family="Arial, sans-serif" font-size="64" font-weight="700" fill="#ffffff">MD</text>
+  <text x="244" y="105" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#18181b">Local image fixture</text>
+  <text x="244" y="146" font-family="Arial, sans-serif" font-size="18" fill="#71717a">Resolved relative to this Markdown document</text>
+</svg>

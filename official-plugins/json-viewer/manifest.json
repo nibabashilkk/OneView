@@ -1,0 +1,27 @@
+{
+  "id": "com.markdownviewer.official.json-viewer",
+  "name": "JSON Viewer",
+  "version": "1.2.0",
+  "description": "JSON 折叠树、节点统计、语义值提示与搜索展开体验。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "runtime": {
+    "kind": "worker",
+    "role": "document",
+    "main": "main.js"
+  },
+  "permissions": [],
+  "contributes": {
+    "documentFormats": [
+      {
+        "id": "json",
+        "label": "JSON",
+        "extensions": [
+          "json"
+        ]
+      }
+    ],
+    "themes": []
+  }
+}

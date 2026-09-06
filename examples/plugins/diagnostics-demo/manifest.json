@@ -1,0 +1,22 @@
+{
+  "id": "com.markdownviewer.diagnostics-demo",
+  "name": "Diagnostics Demo",
+  "version": "1.0.0",
+  "description": "演示插件健康状态、结构化诊断和自动熔断。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "permissions": [
+    "commands",
+    "ui.notice"
+  ],
+  "runtime": {
+    "kind": "worker",
+    "role": "extension",
+    "main": "main.js"
+  },
+  "contributes": {
+    "documentFormats": [],
+    "themes": []
+  }
+}

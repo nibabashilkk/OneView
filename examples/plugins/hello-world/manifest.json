@@ -1,0 +1,24 @@
+{
+  "id": "com.markdownviewer.hello-world",
+  "name": "Hello World",
+  "version": "1.0.0",
+  "description": "oneView 插件系统示例：读取当前文档并显示通知。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "permissions": [
+    "commands",
+    "workspace.read",
+    "ui.notice",
+    "storage"
+  ],
+  "runtime": {
+    "kind": "worker",
+    "role": "extension",
+    "main": "main.js"
+  },
+  "contributes": {
+    "documentFormats": [],
+    "themes": []
+  }
+}

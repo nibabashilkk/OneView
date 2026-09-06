@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "slate.dark",
+  "family": "slate",
+  "variant": "dark",
+  "scope": ["app", "reader", "syntax"],
+  "tokens": {
+    "app.background": "#11151b", "app.surface": "#171c24", "app.surfaceMuted": "#1c222c", "app.border": "#2b3442", "app.text": "#e5e9f0", "app.textMuted": "#9aa5b5", "app.accent": "#aab6c7", "app.accentText": "#11151b", "app.hover": "#222a35", "app.shadow": "rgba(0,0,0,.38)",
+    "reader.background": "#131820", "reader.text": "#dce2ea", "reader.muted": "#95a1b2", "reader.heading": "#f0f3f7", "reader.link": "#8db4d8", "reader.border": "#2b3442", "reader.soft": "#1b222c", "reader.codeBackground": "#1b222c", "reader.selection": "rgba(141,180,216,.22)", "reader.blockquote": "#95a1b2",
+    "syntax.comment": "#7f8b9c", "syntax.keyword": "#e28b98", "syntax.string": "#8fc3ad", "syntax.number": "#8db4d8", "syntax.function": "#b6a1df", "syntax.type": "#d7a879", "syntax.variable": "#d2dae5"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "id": "com.markdownviewer.example.panel-inspector",
+  "name": "Panel Inspector",
+  "version": "1.0.0",
+  "description": "演示沙箱面板、双向消息和编辑器事件",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "permissions": [
+    "commands",
+    "workspace.read",
+    "editor.read",
+    "events",
+    "ui.panel"
+  ],
+  "runtime": {
+    "kind": "worker",
+    "role": "extension",
+    "main": "main.js"
+  },
+  "contributes": {
+    "documentFormats": [],
+    "themes": []
+  }
+}

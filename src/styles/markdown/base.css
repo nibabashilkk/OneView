@@ -1,0 +1,229 @@
+.markdown-body {
+  --md-text: var(--theme-reader-text);
+  --md-muted: var(--theme-reader-muted);
+  --md-border: var(--theme-reader-border);
+  --md-soft: var(--theme-reader-soft);
+  --md-code-bg: var(--theme-reader-code-background);
+  --md-link: var(--theme-reader-link);
+  --md-heading: var(--theme-reader-heading);
+  --md-blockquote: var(--theme-reader-blockquote);
+  --md-selection: var(--theme-reader-selection);
+  color: var(--md-text);
+  background: var(--theme-reader-background);
+  font-size: 15px;
+  line-height: 1.75;
+  overflow-wrap: break-word;
+}
+.markdown-body > :first-child { margin-top: 0; }
+.markdown-body > :last-child { margin-bottom: 0; }
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  scroll-margin-top: 24px;
+  color: var(--md-heading);
+  font-weight: 650;
+  line-height: 1.3;
+}
+.markdown-body h1 { margin: 0 0 1.2rem; font-size: 2rem; letter-spacing: -0.03em; }
+.markdown-body h2 { margin: 2.2rem 0 .8rem; padding-bottom: .45rem; border-bottom: 1px solid var(--md-border); font-size: 1.45rem; letter-spacing: -0.02em; }
+.markdown-body h3 { margin: 1.8rem 0 .65rem; font-size: 1.15rem; }
+.markdown-body h4 { margin: 1.5rem 0 .5rem; font-size: 1rem; }
+.markdown-body p { margin: .85rem 0; }
+.markdown-body a { color: var(--md-link); text-decoration: none; }
+.markdown-body a:hover { text-decoration: underline; }
+.markdown-body strong { font-weight: 650; }
+.markdown-body ul, .markdown-body ol { margin: .85rem 0; padding-left: 1.6rem; }
+.markdown-body ul { list-style: disc; }
+.markdown-body ol { list-style: decimal; }
+.markdown-body li { margin: .25rem 0; }
+.markdown-body blockquote {
+  margin: 1rem 0;
+  border-left: 3px solid var(--md-border);
+  padding: .25rem 1rem;
+  color: var(--md-blockquote);
+}
+.markdown-body ::selection { background: var(--md-selection); }
+.markdown-body code {
+  border-radius: .3rem;
+  background: var(--md-code-bg);
+  padding: .12rem .35rem;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: .88em;
+}
+.markdown-body pre {
+  margin: 1rem 0;
+  overflow: auto;
+  border: 1px solid var(--md-border);
+  border-radius: .65rem;
+  background: var(--md-soft);
+  padding: 1rem;
+  line-height: 1.6;
+}
+.markdown-body pre code { background: transparent; padding: 0; font-size: 13px; }
+.markdown-body table { width: 100%; margin: 1rem 0; border-collapse: collapse; font-size: 14px; }
+.markdown-body th, .markdown-body td { border: 1px solid var(--md-border); padding: .55rem .7rem; text-align: left; }
+.markdown-body th { background: var(--md-soft); font-weight: 600; }
+.markdown-body hr { margin: 2rem 0; border: 0; border-top: 1px solid var(--md-border); }
+.markdown-body img { max-width: 100%; height: auto; border-radius: .5rem; }
+.markdown-body input[type="checkbox"] { margin-right: .45rem; }
+
+/* Rich Markdown enhancements */
+.markdown-body {
+  --md-search: #fef08a;
+  --md-search-current: #f59e0b;
+  --syntax-comment: var(--theme-syntax-comment);
+  --syntax-keyword: var(--theme-syntax-keyword);
+  --syntax-string: var(--theme-syntax-string);
+  --syntax-number: var(--theme-syntax-number);
+  --syntax-title: var(--theme-syntax-function);
+  --syntax-attr: var(--theme-syntax-type);
+  --syntax-variable: var(--theme-syntax-variable);
+}
+.dark .markdown-body {
+  --md-search: #854d0e;
+  --md-search-current: #f59e0b;
+}
+
+.markdown-body .hljs { color: var(--md-text); }
+.markdown-body .hljs-comment,
+.markdown-body .hljs-quote { color: var(--syntax-comment); font-style: italic; }
+.markdown-body .hljs-keyword,
+.markdown-body .hljs-selector-tag,
+.markdown-body .hljs-literal,
+.markdown-body .hljs-section,
+.markdown-body .hljs-link { color: var(--syntax-keyword); }
+.markdown-body .hljs-string,
+.markdown-body .hljs-regexp,
+.markdown-body .hljs-symbol,
+.markdown-body .hljs-bullet { color: var(--syntax-string); }
+.markdown-body .hljs-number,
+.markdown-body .hljs-meta,
+.markdown-body .hljs-built_in,
+.markdown-body .hljs-builtin-name { color: var(--syntax-number); }
+.markdown-body .hljs-title,
+.markdown-body .hljs-title.class_,
+.markdown-body .hljs-title.function_ { color: var(--syntax-title); }
+.markdown-body .hljs-attr,
+.markdown-body .hljs-attribute,
+.markdown-body .hljs-type { color: var(--syntax-attr); }
+.markdown-body .hljs-variable,
+.markdown-body .hljs-template-variable,
+.markdown-body .hljs-params { color: var(--syntax-variable); }
+.markdown-body .hljs-emphasis { font-style: italic; }
+.markdown-body .hljs-strong { font-weight: 700; }
+
+.markdown-body .math-inline { white-space: nowrap; }
+.markdown-body .math-display {
+  margin: 1.25rem 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: .35rem 0;
+  text-align: center;
+}
+.markdown-body .katex { font-size: 1.06em; }
+.markdown-body .katex-display { margin: 0; }
+
+.markdown-body .mermaid-block {
+  margin: 1.25rem 0;
+  overflow-x: auto;
+  border: 1px solid var(--md-border);
+  border-radius: .75rem;
+  background: var(--md-soft);
+  padding: 1rem;
+  text-align: center;
+}
+.markdown-body .mermaid-block svg {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+.markdown-body .mermaid-error {
+  white-space: pre-wrap;
+  text-align: left;
+  color: var(--syntax-keyword);
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  font-size: 13px;
+}
+
+.markdown-body mark.search-hit {
+  border-radius: .18rem;
+  background: var(--md-search);
+  color: inherit;
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--md-search) 80%, transparent);
+  padding: 0 .04em;
+}
+.markdown-body mark.search-hit.is-current {
+  background: var(--md-search-current);
+  color: #18181b;
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--md-search-current) 55%, transparent);
+}
+
+/* Local document resources */
+.markdown-body img.local-image-missing {
+  min-height: 72px;
+  border: 1px dashed var(--md-border);
+  background: var(--md-soft);
+  opacity: .65;
+}
+.markdown-body a.local-link-missing {
+  color: var(--syntax-keyword);
+  text-decoration: line-through;
+  text-decoration-thickness: 1px;
+}
+
+/* v0.5: viewport-friendly rendering for large documents */
+.markdown-body.large-document > * {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 88px;
+}
+.markdown-body.large-document > pre,
+.markdown-body.large-document > table,
+.markdown-body.large-document > .mermaid-block,
+.markdown-body.large-document > .math-display {
+  contain-intrinsic-size: auto 220px;
+}
+
+/* Images are lazy-decoded and expose a small loading/error state without changing layout semantics. */
+.markdown-body img.image-loading {
+  min-height: 72px;
+  background: linear-gradient(90deg, var(--md-soft), color-mix(in srgb, var(--md-soft) 55%, var(--md-border)), var(--md-soft));
+  background-size: 220% 100%;
+  animation: md-image-loading 1.2s ease-in-out infinite;
+}
+.markdown-body img.image-loaded { background: transparent; }
+.markdown-body img.image-error {
+  min-height: 72px;
+  border: 1px dashed var(--md-border);
+  background: var(--md-soft);
+  opacity: .72;
+}
+@keyframes md-image-loading {
+  0% { background-position: 100% 0; }
+  100% { background-position: -120% 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .markdown-body img.image-loading { animation: none; }
+}
+
+/* v0.6 reader preference variables */
+.markdown-body {
+  max-width: var(--reader-width, 860px);
+  font-family: var(--reader-font, inherit);
+  font-size: var(--reader-font-size, 15px);
+  line-height: var(--reader-line-height, 1.75);
+}
+.markdown-body pre code { font-size: var(--reader-code-size, 13px); }
+
+/* v0.21.4 — Reader visual styling is theme-owned. User reading settings only control typography/layout. */
+.viewer-scroll {
+  background: var(--theme-reader-background);
+}
+.markdown-body {
+  --md-text: var(--theme-reader-text);
+  --md-muted: var(--theme-reader-muted);
+  --md-border: var(--theme-reader-border);
+  --md-soft: var(--theme-reader-soft);
+  --md-code-bg: var(--theme-reader-code-background);
+  --md-link: var(--theme-reader-link);
+  --md-heading: var(--theme-reader-heading);
+  --md-blockquote: var(--theme-reader-blockquote);
+  --md-selection: var(--theme-reader-selection);
+}

@@ -1,0 +1,39 @@
+[package]
+name = "oneview-desktop"
+version = "0.21.10"
+description = "A lightweight multi-format file viewer with Markdown editing and optional document plugins"
+authors = ["xiaomogu"]
+edition = "2021"
+license = "PolyForm-Noncommercial-1.0.0"
+
+[lib]
+name = "oneview_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+app-core = { path = "../crates/app-core" }
+markdown-core = { path = "../crates/markdown-core" }
+text-core = { path = "../crates/text-core" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+tauri = { version = "2", features = ["protocol-asset"] }
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+tauri-plugin-clipboard-manager = "2"
+tauri-plugin-single-instance = "2"
+tauri-plugin-window-state = "2"
+tauri-plugin-updater = "2"
+notify = "8.2"
+thiserror = "2"
+
+percent-encoding = "2.3"
+zip = { version = "2", default-features = false, features = ["deflate"] }
+
+[target.'cfg(target_os = "macos")'.dependencies]
+objc2-app-kit = { version = "0.3.2", default-features = false, features = ["std", "NSWorkspace", "block2", "objc2-uniform-type-identifiers"] }
+objc2-foundation = { version = "0.3.2", default-features = false, features = ["std", "NSString", "NSURL"] }
+objc2-uniform-type-identifiers = { version = "0.3.2", default-features = false, features = ["UTType"] }

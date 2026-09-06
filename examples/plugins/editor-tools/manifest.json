@@ -1,0 +1,26 @@
+{
+  "id": "com.markdownviewer.editor-tools",
+  "name": "Editor Tools",
+  "version": "1.0.0",
+  "description": "Plugin API v1 编辑器与事件示例：读取选区、替换选区并监听文档切换。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "permissions": [
+    "commands",
+    "workspace.read",
+    "editor.read",
+    "editor.write",
+    "events",
+    "ui.notice"
+  ],
+  "runtime": {
+    "kind": "worker",
+    "role": "extension",
+    "main": "main.js"
+  },
+  "contributes": {
+    "documentFormats": [],
+    "themes": []
+  }
+}

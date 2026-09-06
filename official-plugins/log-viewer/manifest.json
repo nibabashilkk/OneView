@@ -1,0 +1,27 @@
+{
+  "id": "com.markdownviewer.official.log-viewer",
+  "name": "LOG Viewer",
+  "version": "1.2.0",
+  "description": "日志行号与 ERROR/WARN/INFO/DEBUG/TRACE 语义分层。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "runtime": {
+    "kind": "worker",
+    "role": "document",
+    "main": "main.js"
+  },
+  "permissions": [],
+  "contributes": {
+    "documentFormats": [
+      {
+        "id": "log",
+        "label": "LOG",
+        "extensions": [
+          "log"
+        ]
+      }
+    ],
+    "themes": []
+  }
+}

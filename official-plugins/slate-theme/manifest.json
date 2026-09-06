@@ -1,0 +1,17 @@
+{
+  "id": "com.markdownviewer.official.slate-theme",
+  "name": "Slate Theme",
+  "version": "1.0.0",
+  "description": "克制的灰蓝 Slate 主题，覆盖 App、Reader 与 Syntax 三层 Semantic Token。",
+  "author": "oneView",
+  "apiVersion": 1,
+  "minAppVersion": "0.21.0",
+  "permissions": [],
+  "contributes": {
+    "documentFormats": [],
+    "themes": [
+      { "id": "slate.light", "family": "slate", "label": "Slate", "variant": "light", "scope": ["app", "reader", "syntax"], "path": "themes/slate-light.json" },
+      { "id": "slate.dark", "family": "slate", "label": "Slate", "variant": "dark", "scope": ["app", "reader", "syntax"], "path": "themes/slate-dark.json" }
+    ]
+  }
+}

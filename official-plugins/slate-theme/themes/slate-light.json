@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "id": "slate.light",
+  "family": "slate",
+  "variant": "light",
+  "scope": ["app", "reader", "syntax"],
+  "tokens": {
+    "app.background": "#f6f7f9", "app.surface": "#ffffff", "app.surfaceMuted": "#f0f2f5", "app.border": "#d9dee7", "app.text": "#1f2937", "app.textMuted": "#6b7280", "app.accent": "#475569", "app.accentText": "#ffffff", "app.hover": "#e9edf2", "app.shadow": "rgba(15,23,42,.12)",
+    "reader.background": "#fbfcfd", "reader.text": "#27313f", "reader.muted": "#64748b", "reader.heading": "#172033", "reader.link": "#3b648f", "reader.border": "#dbe1e8", "reader.soft": "#f0f3f6", "reader.codeBackground": "#eef2f6", "reader.selection": "rgba(71,85,105,.16)", "reader.blockquote": "#64748b",
+    "syntax.comment": "#7c8798", "syntax.keyword": "#9f3d4f", "syntax.string": "#3f6f64", "syntax.number": "#476b95", "syntax.function": "#65558f", "syntax.type": "#8b5b37", "syntax.variable": "#334155"
+  }
+}

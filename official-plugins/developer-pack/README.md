@@ -1,0 +1,17 @@
+# Developer Pack
+
+官方开发文档格式包：JSON、YAML、TOML、CSV、LOG、DIFF/PATCH。
+
+这是 oneView v0.21+ 的官方 Document Plugin。零权限运行，解析与渲染逻辑进入独立 Sandbox Worker，不进入 Markdown Core 或 Extension Runtime。
+
+支持格式：
+- JSON: .json
+- YAML: .yaml, .yml
+- TOML: .toml
+- CSV: .csv
+- LOG: .log
+- DIFF / PATCH: .diff, .patch
+
+安装：设置 → 插件 → 从本地安装 → 选择对应 `.mdvplugin`。安装后默认关闭，手动启用即可。
+
+源码目录：`official-plugins/developer-pack`

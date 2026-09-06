@@ -1,0 +1,9 @@
+[workspace]
+members = [
+  "crates/app-core",
+  "crates/markdown-core",
+  "crates/text-core",
+  "tools/document-benchmark",
+  "src-tauri"
+]
+resolver = "2"
