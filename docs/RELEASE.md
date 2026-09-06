@@ -1,5 +1,6 @@
 # 发布指南
 
+> **v0.21.11 当前状态**：GitHub Actions 的 macOS 构建固定使用 ad-hoc signing，不读取 Apple Developer 证书，也不执行 notarization。下面的 Developer ID / notarization 内容仅作为未来商业发行清单。
 ## 1. 发布环境
 
 需要：

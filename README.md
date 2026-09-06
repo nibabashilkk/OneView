@@ -322,8 +322,8 @@ npm run tauri build
 推送版本 Tag：
 
 ```bash
-git tag v0.21.10
-git push origin v0.21.10
+git tag v0.21.11
+git push origin v0.21.11
 ```
 
 Release Workflow 会使用 GitHub 官方 Runner 构建：
@@ -403,7 +403,7 @@ oneView 采用 **PolyForm Noncommercial License 1.0.0** 的源码可见授权模
 
 ## 项目状态
 
-当前版本：**v0.21.10**
+当前版本：**v0.21.11**
 
 oneView 仍处于快速迭代阶段。现阶段重点是：
 

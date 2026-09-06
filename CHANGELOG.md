@@ -1,3 +1,11 @@
+## v0.21.11
+
+- GitHub Actions 的 macOS 发布暂时固定使用 ad-hoc signing，不再读取或导入 Apple Developer 证书。
+- 移除 `APPLE_CERTIFICATE`、`APPLE_CERTIFICATE_PASSWORD`、`APPLE_ID`、`APPLE_PASSWORD`、`APPLE_TEAM_ID` 的发布环境映射。
+- 删除临时 keychain / `security import` 证书导入步骤，避免无有效 `.p12` 时在 bundle 阶段失败。
+- 当前 macOS DMG 适合测试和手动分发；正式商业发行前再接入 Developer ID + notarization。
+- 产品版本统一升级至 `0.21.11`。
+
 # Changelog
 
 ## v0.21.10

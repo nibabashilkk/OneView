@@ -20,36 +20,37 @@ Tauri Action 会把安装包直接上传到同一个 GitHub Release。所有平�
 - `src-tauri/tauri.conf.json`
 - `src-tauri/Cargo.toml`
 
-例如版本为 `0.21.8`：
+例如版本为 `0.21.11`：
 
 ```bash
 git add .
-git commit -m "release: v0.21.8"
+git commit -m "release: v0.21.11"
 git push
 
-git tag v0.21.8
-git push origin v0.21.8
+git tag v0.21.11
+git push origin v0.21.11
 ```
 
 随后进入 GitHub 仓库的 **Actions** 页面查看 `Release desktop app`。成功后，在 **Releases** 中直接下载三个平台的安装包。
 
-## 不配置任何 Secret 能不能打包
+## 当前 macOS 签名策略
 
-可以。
+当前版本**不读取任何 Apple 证书 Secret**。GitHub Actions 在 macOS Runner 上固定设置：
 
-基础构建只依赖 GitHub 自动提供的 `GITHUB_TOKEN`。macOS 没有 Apple 证书时使用 ad-hoc signing，使测试下载包不会因为完全未签名而更容易被系统判为损坏。
+```text
+APPLE_SIGNING_IDENTITY=-
+```
 
-但公开给普通用户长期分发时，仍建议配置正式签名：
+也就是使用 ad-hoc signing。流水线不会创建临时 keychain，也不会执行 `security import`，因此当前阶段不需要配置：
 
-### macOS 可选 Secrets
+- Apple Developer `.p12` 证书
+- 证书密码
+- Apple ID / App-specific password
+- Team ID
 
-- `APPLE_CERTIFICATE`：Developer ID Application `.p12` 的 Base64
-- `APPLE_CERTIFICATE_PASSWORD`
-- `APPLE_ID`
-- `APPLE_PASSWORD`：App-specific password
-- `APPLE_TEAM_ID`
+这样可以先稳定产出测试用 DMG。需要注意：ad-hoc signing **不等于 Developer ID 正式签名，也没有 notarization**。普通用户从互联网下载后仍可能看到 Gatekeeper 安全提示。
 
-配置完整后 Tauri 可以完成正式代码签名/公证流程。
+等 oneView 正式商业发行并取得 Apple Developer 证书后，再单独升级 Release workflow 接入 Developer ID Application 签名和 notarization；不要只在仓库里添加 Secret，当前 workflow 会明确忽略这些证书变量。
 
 ### Windows
 

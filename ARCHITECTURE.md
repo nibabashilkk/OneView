@@ -1,4 +1,4 @@
-# oneView Architecture — v0.21.10
+# oneView Architecture — v0.21.11
 
 
 
@@ -565,7 +565,7 @@ NSIS 只注册：
 
 ### Release boundary
 
-Windows 仍需要在 Windows 环境验证 NSIS、文件关联和右键动作；当前 CI 发布 x86_64。macOS 验证主 App 签名/notarization。
+Windows 仍需要在 Windows 环境验证 NSIS、文件关联和右键动作；当前 CI 发布 x86_64。macOS 当前 CI 使用 ad-hoc signing；Developer ID 签名/notarization 留待商业发行阶段验证。
 
 ## v0.16.6 Default App Service
 

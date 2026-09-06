@@ -1,6 +1,6 @@
 [package]
 name = "oneview-desktop"
-version = "0.21.10"
+version = "0.21.11"
 description = "A lightweight multi-format file viewer with Markdown editing and optional document plugins"
 authors = ["xiaomogu"]
 edition = "2021"
